@@ -38,3 +38,16 @@ let paragraph = document.getElementById("text");
 button.addEventListener("click", function() {
     paragraph.innerText = "Button was clicked";
 });
+
+
+
+//createElement : Creates a new HTML element dynamically.
+
+let container = document.getElementById("container");
+let addBtn = document.getElementById("addBtn");
+
+addBtn.addEventListener("click", function() {
+    let newPara = document.createElement("p");
+    newPara.innerText = "Appended Paragraph!";
+    container.append(newPara); // adds at the end
+});

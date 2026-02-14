@@ -29,3 +29,12 @@ function changeSelect(){
         item.style.color = "green";
     });
 }
+
+
+// addEventListner : Add multiple events to the same element
+let button = document.getElementById("btn");
+let paragraph = document.getElementById("text");
+
+button.addEventListener("click", function() {
+    paragraph.innerText = "Button was clicked";
+});
